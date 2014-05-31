@@ -6,18 +6,45 @@ body {
 	font-family: 'Helvetica Neue', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-size: 18px;
+	font-weight: lighter;
 	color: #ffffff;
 }
 
 .container {
 	padding: 3em;
 }
-
+.geo-coordinates {
+	border-right: solid 1px #fff;
+	height: 100%;
+}
 h1 {
 	font-size: 4em;
 	text-align: center;
-	font-weight: lighter;
+}
+.one {
+	border-bottom: solid 1px #fff;
+}
+.two {
+	height: 200px;
+}
+.three {
+	border-top: solid 1px #fff;
+	height: 100%;
 }
 .report {
 	text-align: center;
+	padding: 1.3em 0;
+	font-size: 20px;
+}
+#displayDate {
+	font-size: 2.5em;
+}
+#displayMagnitude {
+	font-size: 6em;
+	padding-left: 1.1em;
+}
+.four{
+	border-top: solid 1px #fff;
+	height: 100%;
+	padding-top: 2em;
 }
