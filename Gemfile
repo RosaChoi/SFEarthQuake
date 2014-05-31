@@ -16,6 +16,13 @@ gem 'activerecord'
 gem 'rake'
 
 gem 'shotgun'
+gem 'postmark-mitt'
+gem 'httparty'
+gem 'libxml-ruby'
+
+group :development do
+  gem 'pry'
+end
 
 group :test do
   gem 'faker'
