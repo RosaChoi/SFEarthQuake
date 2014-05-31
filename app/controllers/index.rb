@@ -23,5 +23,10 @@ post '/api/earthquake' do
 
   probability = response.parsed_response['xmlresponse']['forecast']['prob']
 
+  puts "An earthquake greater than #{prob_magnitude} just happened in the #{city} Bay Area"
+  puts "magnitude: #{magnitude}"
+  puts "time: #{time}"
+  puts "location: #{location}"
+
   200
 end
