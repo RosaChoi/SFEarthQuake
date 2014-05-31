@@ -16,7 +16,15 @@ require 'active_record'
 require 'logger'
 
 require 'sinatra'
-require "sinatra/reloader" if development?
+
+require 'postmark-mitt'
+require 'httparty'
+require 'xml'
+
+if development?
+  require "sinatra/reloader"
+  require 'pry'
+end
 
 require 'erb'
 
