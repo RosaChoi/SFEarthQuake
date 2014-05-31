@@ -3,6 +3,7 @@ get '/' do
   erb :index
 end
 
+# TODO: Refactor this by making wrappers for Postmark and openhazards
 post '/api/earthquake' do
 
   # This data is sent by Postmark service whenever we are notified by USGS
