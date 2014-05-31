@@ -25,7 +25,11 @@ post '/api/earthquake' do
   time = body.match(/UTC\s*(\d.*) near/)[1]
   location = body.match(/Location.*\s*(\d.*W)/)[1]
 
-  puts "An earthquake just happened in the San Francisco Bay Area"
+  Earthquake.create magnitude: magnitude,
+                    time: time,
+                    location: location
+
+  puts "An earthquake greater than 6.0 just occured"
   puts "magnitude: #{magnitude}"
   puts "time: #{time}"
   puts "location: #{location}"
