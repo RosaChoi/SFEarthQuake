@@ -1,16 +1,6 @@
-# TODO: Refactor this by making wrappers for Postmark and openhazards
-
 get '/' do
-  # Get probability data from openhazards
-  city = "San Francisco, CA"
-  prob_magnitude = 3.0
-  radius = 100
-  days = 1
-  url = URI.encode("http://api.openhazards.com/GetEarthquakeProbability?q=#{city}&m=#{prob_magnitude}&r=#{radius}&w=#{days}")
 
-  response = HTTParty.get(url)
-
-  @probability = response.parsed_response['xmlresponse']['forecast']['prob']
+  @probability = OpenHazards.get_probability
 
   last_earthquake = Earthquake.last
   @magnitude = last_earthquake.magnitude
