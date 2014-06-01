@@ -16,11 +16,11 @@ p {
 	padding: 1.5em;
 }
 .geo-coordinates {
-	font-size: 3em;
+	font-size: 2.2em;
 	border-right: solid 1px #fff;
 	height: 100%;
-	background-position: right;
 	background: url(../img/sf-bay-area-map1.png) center center no-repeat;
+	background-position: right;
 }
 h1 {
 	font-size: 3em;
@@ -55,7 +55,14 @@ h1 {
 }
 aside {
 	border-right: solid 1px #fff;
+	text-align: center;
 }
+
+aside a {
+	color: white;
+	font-weight: normal;
+}
+
 .to-do,
 .probability {
 	padding-top: 1.2em;
