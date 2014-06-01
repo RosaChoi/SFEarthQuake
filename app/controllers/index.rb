@@ -1,7 +1,7 @@
 # TODO: Refactor this by making wrappers for Postmark and openhazards
 
 get '/' do
-  # Get probability data from
+  # Get probability data from openhazards
   city = "San Francisco, CA"
   prob_magnitude = 3.0
   radius = 100
@@ -12,6 +12,10 @@ get '/' do
 
   @probability = response.parsed_response['xmlresponse']['forecast']['prob']
 
+  last_earthquake = Earthquake.last
+  @magnitude = last_earthquake.magnitude
+  @time = last_earthquake.time.strftime("%A, %d %b %Y %l:%M %p")
+  @location = last_earthquake.location
 
   erb :index
 end

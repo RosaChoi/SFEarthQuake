@@ -1,14 +1,14 @@
 <!-- Earthquake Update Report Dashboard -->
 <div class="container dashboard">
   <div class="row one">
-    <span id="displayDate">Placeholder</span>
+    <span id="displayDate"><%= @time %></span>
   </div>
   <div class="row two">
     <div class="col-lg-7 col-sm-5 col-xs-8 geo-coordinates">
-      <span id="displayLocation">Here we display coordinates</span>
+      <span id="displayLocation"><%= @location %></span>
     </div>
     <div class="col-lg-4 col-sm-3 col-xs-8 magnitude">
-      <span id="displayMagnitude">4.5m</span>
+      <span id="displayMagnitude"><%= @magnitude %>m</span>
     </div>
   </div>
   <div class="row three">
