@@ -9,23 +9,27 @@ body {
 	font-weight: lighter;
 	color: #ffffff;
 }
-
+p {
+	/*font-weight: normal;*/
+}
 .container {
-	padding: 3em;
+	padding: 1.5em;
 }
 .geo-coordinates {
 	border-right: solid 1px #fff;
 	height: 100%;
+	background: url(../img/sf-bay-area-map1.png) center center no-repeat;
 }
 h1 {
-	font-size: 4em;
+	font-size: 3em;
 	text-align: center;
 }
 .one {
 	border-bottom: solid 1px #fff;
 }
 .two {
-	height: 200px;
+	height: 150px;
+	padding-top: 0;
 }
 .three {
 	border-top: solid 1px #fff;
@@ -33,18 +37,28 @@ h1 {
 }
 .report {
 	text-align: center;
-	padding: 1.3em 0;
+	padding-bottom: 1em;
 	font-size: 20px;
 }
 #displayDate {
-	font-size: 2.5em;
+	font-size: 1.5em;
 }
 #displayMagnitude {
-	font-size: 6em;
+	font-size: 5em;
 	padding-left: 1.1em;
 }
 .four{
 	border-top: solid 1px #fff;
 	height: 100%;
-	padding-top: 2em;
 }
+aside {
+	border-right: solid 1px #fff;
+}
+.to-do,
+.probability {
+	padding-top: 1.2em;
+}
+/*#diplayProbability {
+	height:  150px;
+	width: auto;
+}*/
