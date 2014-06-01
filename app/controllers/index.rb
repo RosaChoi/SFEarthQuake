@@ -10,7 +10,7 @@ get '/' do
 
   response = HTTParty.get(url)
 
-  probability = response.parsed_response['xmlresponse']['forecast']['prob']
+  @probability = response.parsed_response['xmlresponse']['forecast']['prob']
 
 
   erb :index

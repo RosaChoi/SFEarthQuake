@@ -1,23 +1,25 @@
-<div class="container">
-  <h1>Welcome to Sinatra!</h1>
-  <p>Hello, world!</p>
-
-  <table>
-    <tr>
-      <th>File Description</th>
-      <th>File Location</th>
-    </tr>
-    <tr>
-      <td>This view file</td>
-      <td><code><%= __FILE__.gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-    <tr>
-      <td>The layout file</td>
-      <td><code><%= File.expand_path('../layout.erb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-    <tr>
-      <td>The current controller</td>
-      <td><code><%= File.expand_path('../../controllers/index.rb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-  </table>
+<!-- Earthquake Update Report Dashboard -->
+<div class="container dashboard">
+  <div class="row one">
+    <span id="displayDate">Placeholder</span>
+  </div>
+  <div class="row two">
+    <div class="col-lg-7 col-sm-5 col-xs-8 geo-coordinates">
+      <span id="displayLocation">Here we display coordinates</span>
+    </div>
+    <div class="col-lg-4 col-sm-3 col-xs-8 magnitude">
+      <span id="displayMagnitude">4.5m</span>
+    </div>
+  </div>
+  <div class="row three">
+    <div class="col-lg-12 col-sx-11 sf-report-title">
+      <h1>SAN FRANCISCO BAY AREA</h1>
+      <p class="report">Earthquake Update Report</p>
+    </div>
+  </div>
+  <div class="row four">
+    <div class="probability">
+      <div id="displayProbability" data-probability="<%= @probability %>"></div>
+    </div>
+  </div>
 </div>
